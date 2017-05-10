@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+U:\ArmProjects\Third Assignment\FirstProgram.uvproj
+Project File Date:  08/01/2010
+
+<h2>Output:</h2>
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=752 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(7): error: A1517E: Unexpected operator equal to or equivalent to =
+FirstProgram.s:     7 00000000    MOV r2, =32
+FirstProgram.s(8): error: A1152E: Unexpected operator
+FirstProgram.s:     8 00000000    LDR r1, #0x0000FFFF
+FirstProgram.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(7): error: A1517E: Unexpected operator equal to or equivalent to =
+FirstProgram.s:     7 00000000    MOV r2, =32
+FirstProgram.s(8): error: A1152E: Unexpected operator
+FirstProgram.s:     8 00000000    LDR r1, #0x0000FFFF
+FirstProgram.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(7): error: A1517E: Unexpected operator equal to or equivalent to =
+FirstProgram.s:     7 00000000    MOV r2, =32
+FirstProgram.s: 1 Error, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=772 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=780 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).

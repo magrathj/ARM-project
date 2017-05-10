@@ -1,0 +1,88 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             FirstProgram, CODE, READONLY
+    2 00000000                 IMPORT           main
+    3 00000000                 EXPORT           start
+    4 00000000         
+    5 00000000         start
+    6 00000000         ;var
+    7 00000000 E3A00001        LDR              r0, =1
+    8 00000004         
+    9 00000004         ;consts
+   10 00000004 E3A01007        LDR              r1, =7
+   11 00000008 E3A02004        LDR              r2, =4
+   12 0000000C E3A03006        LDR              r3, =6
+   13 00000010         
+   14 00000010         ;7x^3 
+   15 00000010 E0040090        MUL              r4, r0, r0
+   16 00000014 E0040490        MUL              r4, r0, r4
+   17 00000018 E0040491        MUL              r4, r1, r4
+   18 0000001C         
+   19 0000001C         ;4x
+   20 0000001C E0050290        MUL              r5, r0, r2
+   21 00000020         
+   22 00000020         ;total
+   23 00000020 E0836004        ADD              r6, r3, r4
+   24 00000024 E0867005        ADD              r7, r6, r5
+   25 00000028         
+   26 00000028         
+   27 00000028 EAFFFFFE 
+                       stop    B                stop
+   28 0000002C         
+   29 0000002C                 END
+Command Line: --debug --xref --apcs=interwork --depend=FirstProgram.d -oFirstPr
+ogram.o -IC:\Keil\ARM\INC -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1"
+ --predefine="__MICROLIB SETA 1" --predefine="NO_CLOCK_SETUP SETA 1" --predefin
+e="NO_EMC_SETUP SETA 1" --predefine="RAM_INTVEC SETA 1" --predefine="RAM_MODE S
+ETA 1" --predefine="REMAP SETA 1" --list=FirstProgram.lst FirstProgram.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FirstProgram 00000000
+
+Symbol: FirstProgram
+   Definitions
+      At line 1 in file FirstProgram.s
+   Uses
+      None
+Comment: FirstProgram unused
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 5 in file FirstProgram.s
+   Uses
+      At line 3 in file FirstProgram.s
+Comment: start used once
+stop 00000028
+
+Symbol: stop
+   Definitions
+      At line 27 in file FirstProgram.s
+   Uses
+      At line 27 in file FirstProgram.s
+Comment: stop used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 2 in file FirstProgram.s
+   Uses
+      None
+Comment: main unused
+1 symbol
+335 symbols in table

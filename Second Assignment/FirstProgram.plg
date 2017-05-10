@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+U:\ArmProjects\Second Assignment\FirstProgram.uvproj
+Project File Date:  08/01/2010
+
+<h2>Output:</h2>
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=764 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=764 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(7): error: A1516E: Bad symbol 'FA', not defined or external
+FirstProgram.s:     7 00000000  LDR r0, =FA
+FirstProgram.s:                          ^
+FirstProgram.s: 1 Error, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=764 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=764 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(7): error: A1106E: Missing comma
+FirstProgram.s:     7 00000000  LDR r0 = 250  ; set variables 
+FirstProgram.s(8): error: A1106E: Missing comma
+FirstProgram.s:     8 00000000  LSR r1 = 1
+FirstProgram.s(9): error: A1106E: Missing comma
+FirstProgram.s:     9 00000000  LSR r4 = 0
+FirstProgram.s: 3 Errors, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(8): error: A1517E: Unexpected operator equal to or equivalent to =
+FirstProgram.s:     8 00000004  LSR r1, =1
+FirstProgram.s(9): error: A1517E: Unexpected operator equal to or equivalent to =
+FirstProgram.s:     9 00000004  LSR r4, =0
+FirstProgram.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(7): error: A1150E: Bad symbol, not defined or external
+FirstProgram.s:     7 00000000  LDR r0, 250  ; set variables 
+FirstProgram.s:                              ^
+FirstProgram.s(8): warning: A1865W: '#' not seen before constant expression
+FirstProgram.s:     8 00000004  LSR r1, 1
+FirstProgram.s:                        ^
+FirstProgram.s(9): warning: A1865W: '#' not seen before constant expression
+FirstProgram.s:     9 00000008  LSR r4, 0
+FirstProgram.s:                        ^
+FirstProgram.s(9): error: A1482E: Shift option out of range, allowable values are from 1 to 32
+FirstProgram.s:     9 00000008  LSR r4, 0
+FirstProgram.s: 2 Errors, 2 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=884 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=884 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=880 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=880 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).

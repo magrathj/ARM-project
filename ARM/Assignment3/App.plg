@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+U:\ArmProjects\ARM\Assignment3\App.uvproj
+Project File Date:  02/07/2015
+
+<h2>Output:</h2>
+Build target 'Sample'
+linking...
+Program Size: Code=796 RO-data=32 RW-data=4 ZI-data=1164  
+FromELF: creating hex file...
+"App.axf" - 0 Error(s), 0 Warning(s).
+"fm" @fmsettings.txt
+Flash Magic Version 7.51.3222
+8051/XA Driver Version 3.03.3043
+ARM UART Driver Version 3.04.3043
+ARM Cortex UART Driver Version 4.56.3216
+ARM Ethernet Driver Version 2.04.3043
+ARM Cortex Ethernet Driver Version 2.06.3043
+ARM CAN Driver Version 2.07.3134
+(C) Embedded Systems Academy 2000-2013 All rights reserved
+NON PRODUCTION USE ONLY
+Connection failed: comms error (Unable to communicate. (in use))
+Build target 'Sample'
+linking...
+Program Size: Code=796 RO-data=32 RW-data=4 ZI-data=1164  
+FromELF: creating hex file...
+"App.axf" - 0 Error(s), 0 Warning(s).
+"fm" @fmsettings.txt
+Flash Magic Version 7.51.3222
+8051/XA Driver Version 3.03.3043
+ARM UART Driver Version 3.04.3043
+ARM Cortex UART Driver Version 4.56.3216
+ARM Ethernet Driver Version 2.04.3043
+ARM Cortex Ethernet Driver Version 2.06.3043
+ARM CAN Driver Version 2.07.3134
+(C) Embedded Systems Academy 2000-2013 All rights reserved
+NON PRODUCTION USE ONLY
+Connected
+Device selected
+Erase complete (USED)
+Hex file programming complete (App.hex)
+Verify passed (App.hex)

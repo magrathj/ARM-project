@@ -1,0 +1,35 @@
+	AREA	FirstProgram, CODE, READONLY
+	IMPORT	main
+	EXPORT	start
+
+start
+	
+	LDR r2, =0xFFFF				 ;var
+	LDR r0, =0
+	LDR r1, =1
+
+	LDR r3, =31				;counters
+	LDR r4, =0
+
+	CMP r3, #0 ; if (y = 0)
+	BNE else1 ; {
+	
+	B endif1 ; }
+else1 ; else {	 
+	 BLS endif2 ; {
+do1 
+	 AND r5, r2, r1
+	 ADD r0, r0, r5		 
+	 MOV r2, r2, LSR #1	
+	 MOV r0, r0, LSL #1	 
+	 SUBS r3, r3, #1
+	 
+	 BNE do1 ; } while (y ? 0)
+endif2 ; }
+endif1 ; }				  
+	 MOV r0, r0, LSL #1
+     
+	
+stop	B	stop
+
+	END	

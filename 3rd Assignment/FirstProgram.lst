@@ -1,0 +1,130 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             FirstProgram, CODE, READONLY
+    2 00000000                 IMPORT           main
+    3 00000000                 EXPORT           start
+    4 00000000         
+    5 00000000         start
+    6 00000000         
+    7 00000000 E59F2034        LDR              r2, =0xFFFF ;var
+    8 00000004 E3A00000        LDR              r0, =0
+    9 00000008 E3A01001        LDR              r1, =1
+   10 0000000C         
+   11 0000000C E3A0301F        LDR              r3, =31     ;counters
+   12 00000010         
+   13 00000010         
+   14 00000010         
+   15 00000010 E3530000        CMP              r3, #0      ; if (y = 0)
+   16 00000014 1A000000        BNE              else1       ; {
+   17 00000018         
+   18 00000018         
+   19 00000018 EA000006        B                endif1      ; }
+   20 0000001C         else1                                ; else {  
+   21 0000001C 9A000005        BLS              endif2      ; {
+   22 00000020         do1
+   23 00000020 E0025001        AND              r5, r2, r1
+   24 00000024 E0800005        ADD              r0, r0, r5
+   25 00000028 E1A020A2        MOV              r2, r2, LSR #1
+   26 0000002C E1A00080        MOV              r0, r0, LSL #1
+   27 00000030 E2533001        SUBS             r3, r3, #1
+   28 00000034         
+   29 00000034 1AFFFFF9        BNE              do1         ; } while (y ? 0)
+   30 00000038         endif2                               ; }
+   31 00000038         endif1                               ; }      
+   32 00000038         
+   33 00000038         
+   34 00000038         
+   35 00000038         
+   36 00000038 EAFFFFFE 
+                       stop    B                stop
+   37 0000003C         
+   38 0000003C                 END
+              0000FFFF 
+Command Line: --debug --xref --apcs=interwork --depend=FirstProgram.d -oFirstPr
+ogram.o -IC:\Keil\ARM\INC -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1"
+ --predefine="__MICROLIB SETA 1" --predefine="NO_CLOCK_SETUP SETA 1" --predefin
+e="NO_EMC_SETUP SETA 1" --predefine="RAM_INTVEC SETA 1" --predefine="RAM_MODE S
+ETA 1" --predefine="REMAP SETA 1" --list=FirstProgram.lst FirstProgram.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+FirstProgram 00000000
+
+Symbol: FirstProgram
+   Definitions
+      At line 1 in file FirstProgram.s
+   Uses
+      None
+Comment: FirstProgram unused
+do1 00000020
+
+Symbol: do1
+   Definitions
+      At line 22 in file FirstProgram.s
+   Uses
+      At line 29 in file FirstProgram.s
+Comment: do1 used once
+else1 0000001C
+
+Symbol: else1
+   Definitions
+      At line 20 in file FirstProgram.s
+   Uses
+      At line 16 in file FirstProgram.s
+Comment: else1 used once
+endif1 00000038
+
+Symbol: endif1
+   Definitions
+      At line 31 in file FirstProgram.s
+   Uses
+      At line 19 in file FirstProgram.s
+Comment: endif1 used once
+endif2 00000038
+
+Symbol: endif2
+   Definitions
+      At line 30 in file FirstProgram.s
+   Uses
+      At line 21 in file FirstProgram.s
+Comment: endif2 used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 5 in file FirstProgram.s
+   Uses
+      At line 3 in file FirstProgram.s
+Comment: start used once
+stop 00000038
+
+Symbol: stop
+   Definitions
+      At line 36 in file FirstProgram.s
+   Uses
+      At line 36 in file FirstProgram.s
+Comment: stop used once
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 2 in file FirstProgram.s
+   Uses
+      None
+Comment: main unused
+1 symbol
+341 symbols in table

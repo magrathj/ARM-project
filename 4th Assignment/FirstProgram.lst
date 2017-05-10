@@ -1,0 +1,178 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             Assignment4, CODE, READONLY
+    2 00000000                 IMPORT           main
+    3 00000000                 EXPORT           start
+    4 00000000         
+    5 00000000         
+    6 00000000         start
+    7 00000000 E59F1020        LDR              r1, =teststr ; address = 0xA100
+                                                            0000
+    8 00000004 E3A03000        LDR              r3, =0      ;counter
+    9 00000008         
+   10 00000008         ; while ( (char = Memory.byte[address])
+   11 00000008 EA000002        B                testwh1     ; != 0 ) {
+   12 0000000C E3500020 
+                       wh1     CMP              r0, #0x20   ; if (char >= 'a'
+   13 00000010 1A000000        BNE              endif1      ; AND
+   14 00000014         ;  {
+   15 00000014 E2833001        ADD              r3, r3, #1  ;   counter = count
+                                                            er + 1;
+   16 00000018         endif1                               ; }
+   17 00000018 E4D10001 
+                       testwh1 LDRB             r0, [r1], #1 ; }
+   18 0000001C E3500000        CMP              r0, #0      ;                  
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                      
+   19 00000020 1AFFFFF9        BNE              wh1         ;
+   20 00000024         
+   21 00000024         
+   22 00000024 EAFFFFFE 
+                       stop    B                stop
+   23 00000028         
+   24 00000028 00000000        AREA             TestData, DATA, READWRITE
+   25 00000000 68 65 6C 
+              6C 6F 20 
+              62 79 65 
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+              20 68 69 
+              20 68 69 
+              69 69 20 
+              00       teststr DCB              "hello bye hi hiii ",0 ; NULL t
+                                                            erminated test stri
+                                                            ng
+   26 00000013         
+   27 00000013                 END
+Command Line: --debug --xref --apcs=interwork --depend=FirstProgram.d -oFirstPr
+ogram.o -IC:\Keil\ARM\INC -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1"
+ --predefine="__MICROLIB SETA 1" --predefine="NO_CLOCK_SETUP SETA 1" --predefin
+e="NO_EMC_SETUP SETA 1" --predefine="RAM_INTVEC SETA 1" --predefine="RAM_MODE S
+ETA 1" --predefine="REMAP SETA 1" --list=FirstProgram.lst FirstProgram.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Assignment4 00000000
+
+Symbol: Assignment4
+   Definitions
+      At line 1 in file FirstProgram.s
+   Uses
+      None
+Comment: Assignment4 unused
+endif1 00000018
+
+Symbol: endif1
+   Definitions
+      At line 16 in file FirstProgram.s
+   Uses
+      At line 13 in file FirstProgram.s
+Comment: endif1 used once
+start 00000000
+
+Symbol: start
+   Definitions
+      At line 6 in file FirstProgram.s
+   Uses
+      At line 3 in file FirstProgram.s
+Comment: start used once
+stop 00000024
+
+Symbol: stop
+   Definitions
+      At line 22 in file FirstProgram.s
+   Uses
+      At line 22 in file FirstProgram.s
+Comment: stop used once
+testwh1 00000018
+
+Symbol: testwh1
+   Definitions
+      At line 17 in file FirstProgram.s
+   Uses
+      At line 11 in file FirstProgram.s
+Comment: testwh1 used once
+wh1 0000000C
+
+Symbol: wh1
+   Definitions
+      At line 12 in file FirstProgram.s
+   Uses
+      At line 19 in file FirstProgram.s
+Comment: wh1 used once
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+TestData 00000000
+
+Symbol: TestData
+   Definitions
+      At line 24 in file FirstProgram.s
+   Uses
+      None
+Comment: TestData unused
+teststr 00000000
+
+Symbol: teststr
+   Definitions
+      At line 25 in file FirstProgram.s
+   Uses
+      At line 7 in file FirstProgram.s
+Comment: teststr used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 2 in file FirstProgram.s
+   Uses
+      None
+Comment: main unused
+1 symbol
+342 symbols in table

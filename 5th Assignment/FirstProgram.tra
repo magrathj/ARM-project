@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'FirstProgram.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"firstprogram.o"'
+### List of Objects: adding '"..\libcs1021\libcs1021.lib"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "firstprogram.o" "..\libcs1021\libcs1021.lib" --library_type=microlib --strict --scatter "FirstProgram.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\FirstProgram.map" -o "FirstProgram.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'FirstProgram.axf'
+### ADS-LD Command File: 'FirstProgram.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'FirstProgram.lnp', Handle=0x00000334
+### Writing '.lnp' file
+### ADS-LD Command file 'FirstProgram.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

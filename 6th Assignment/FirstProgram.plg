@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+U:\ArmProjects\6th Assignment\FirstProgram.uvproj
+Project File Date:  12/03/2014
+
+<h2>Output:</h2>
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=964 RO-data=32 RW-data=1040 ZI-data=2048  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).

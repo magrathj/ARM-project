@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+U:\ArmProjects\First Assignment\FirstProgram.uvproj
+Project File Date:  08/01/2010
+
+<h2>Output:</h2>
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+FirstProgram.s(16): error: A1477E: This register combination results in UNPREDICTABLE behaviour
+FirstProgram.s:    16 00000014  MUL r4, r4, r0
+FirstProgram.s(17): error: A1477E: This register combination results in UNPREDICTABLE behaviour
+FirstProgram.s:    17 00000018  MUL r4, r4, r1 
+FirstProgram.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=792 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+assembling FirstProgram.s...
+linking...
+Program Size: Code=792 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC2468 Ext SDRAM'
+linking...
+Program Size: Code=792 RO-data=32 RW-data=4 ZI-data=2052  
+"FirstProgram.axf" - 0 Error(s), 0 Warning(s).

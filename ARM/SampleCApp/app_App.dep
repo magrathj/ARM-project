@@ -1,0 +1,3 @@
+Dependencies for Project 'app', Target 'App': (DO NOT MODIFY !)
+F (.\main.c)(0x5118FA5C)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" -o "main.o" --omf_browse "main.crf" --depend "main.d")
+F (.\EA-LPC2138-EDU-C.lib)(0x5118FA5C)()
